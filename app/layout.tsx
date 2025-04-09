@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Raleway } from 'next/font/google';
+import { Header } from '@/components/header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`antialiased ${raleway.className}`}>{children}</body>
+      <body
+        className={`min-h-dvh bg-beige/20 bg-[url(/bg.png)] bg-cover bg-fixed bg-no-repeat antialiased md:bg-center ${raleway.className}`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

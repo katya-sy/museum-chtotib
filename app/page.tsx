@@ -2,9 +2,9 @@ import { Icon } from '@/components/shared/icon';
 
 export default function Home() {
   return (
-    <div className='bg-beige-gradient'>
+    <div className=''>
       <Icon name='shared/cart' />
-      sdfhghj,
+      sdfhghj
     </div>
   );
 }

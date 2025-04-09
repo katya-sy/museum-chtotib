@@ -33,6 +33,7 @@ const config: Config = {
         beige: '#E4C692',
         'blue-dark': '#010440',
         'red-accent': '#A63A3A',
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
