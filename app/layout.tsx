@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Raleway } from 'next/font/google';
 import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Header />
         <div className='container mb-10 mt-5 md:mb-16 md:mt-8'>{children}</div>
+        <Footer />
       </body>
     </html>
   );
