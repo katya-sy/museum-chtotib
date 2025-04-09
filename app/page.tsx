@@ -1,10 +1,16 @@
-import { Icon } from '@/components/shared/icon';
+import { Banner } from '@/components/banner';
+
+const banners = [
+  { img: '/banner.png', title: 'Добро пожаловать в музей ЧТОТиБ!' },
+  { img: '/logo.png', title: 'Добро пожаловать в музей ЧТОТиБ!' },
+  { img: '/banner.png', title: 'Добро пожаловать в музей ЧТОТиБ!' },
+  { img: '/logo.png', title: 'Добро пожаловать в музей ЧТОТиБ!' },
+];
 
 export default function Home() {
   return (
-    <div className=''>
-      <Icon name='shared/cart' />
-      sdfhghj
-    </div>
+    <>
+      <Banner banners={banners} />
+    </>
   );
 }
