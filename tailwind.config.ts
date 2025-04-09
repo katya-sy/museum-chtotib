@@ -30,7 +30,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        beige: '#E4C692',
+        beige: { DEFAULT: '#E4C692', light: '#F2E0C9' },
         'blue-dark': '#010440',
         'red-accent': '#A63A3A',
 

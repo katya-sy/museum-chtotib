@@ -8,11 +8,7 @@ import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 import Fade from 'embla-carousel-fade';
 
-export const Banner = ({
-  banners,
-}: {
-  banners: { img: string; title: string }[];
-}) => {
+export const Banner = ({ banners }: { banners: { img: string }[] }) => {
   return (
     <Carousel
       opts={{ loop: true }}
@@ -38,8 +34,8 @@ export const Banner = ({
               className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 flex h-full items-center justify-center bg-[#53401F]/50 p-5 md:p-10'>
-              <h2 className='text-center text-3xl font-semibold text-[#F2E0C9] md:text-5xl'>
-                {b.title}
+              <h2 className='text-beige-light text-center text-3xl font-semibold md:text-5xl'>
+                Добро пожаловать в музей ЧТОТиБ!
               </h2>
             </div>
           </CarouselItem>
