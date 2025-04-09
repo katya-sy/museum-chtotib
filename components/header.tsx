@@ -16,7 +16,7 @@ export const Header = () => {
         <nav>
           <ul className='flex flex-wrap items-baseline gap-x-8 gap-y-4'>
             <li>
-              <Link href='/' className='nav-link'>
+              <Link href='/history' className='nav-link'>
                 История развития
               </Link>
             </li>

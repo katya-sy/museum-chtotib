@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`min-h-dvh bg-beige/20 bg-[url(/bg.png)] bg-cover bg-fixed bg-no-repeat antialiased md:bg-top ${raleway.className}`}
+        className={`flex min-h-dvh flex-col bg-beige/20 bg-[url(/bg.png)] bg-cover bg-fixed bg-no-repeat antialiased md:bg-top ${raleway.className}`}
       >
         <Header />
         <div className='container mb-10 mt-5 md:mb-16 md:mt-8'>{children}</div>
