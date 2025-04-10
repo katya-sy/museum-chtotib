@@ -27,7 +27,9 @@ export const Card = ({ item, sm, buttonText }: Props) => {
         />
       </div>
       <div className='absolute bottom-0 left-0 right-0 bg-beige-gradient p-3 md:p-5'>
-        <h4 className='line-clamp-2 text-center text-xl font-medium text-red-accent md:text-2xl'>
+        <h4
+          className={`${sm ? 'text-lg' : 'text-xl'} line-clamp-2 text-center font-medium text-red-accent max-md:break-words md:text-2xl`}
+        >
           {item.title}
         </h4>
         <div
@@ -35,7 +37,11 @@ export const Card = ({ item, sm, buttonText }: Props) => {
         >
           <div className='flex flex-col gap-5 pt-3 md:pt-5'>
             {item.desc && (
-              <p className='line-clamp-5 text-red-accent'>{item.desc}</p>
+              <p
+                className={`${sm ? 'line-clamp-2' : 'line-clamp-4'} text-red-accent md:line-clamp-5`}
+              >
+                {item.desc}
+              </p>
             )}
             <Button className='max-md:hidden' asChild>
               <Link href=''>{buttonText || 'Перейти'}</Link>

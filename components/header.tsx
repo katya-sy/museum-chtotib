@@ -21,7 +21,7 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/' className='nav-link'>
+              <Link href='/traditions' className='nav-link'>
                 Традиции
               </Link>
             </li>
