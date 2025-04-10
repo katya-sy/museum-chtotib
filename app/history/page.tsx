@@ -43,9 +43,11 @@ const sections = [
 ];
 
 export default function History() {
+  const paths = [{ href: 'history', label: 'История развития' }];
+
   return (
     <div>
-      <Breadcrumbs />
+      <Breadcrumbs paths={paths} />
       <DescBlock title={content.title} desc={content.desc} />
       <div className='mt-16 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-4 xs:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:mt-24 md:grid-cols-[repeat(auto-fit,minmax(290px,1fr))]'>
         {sections.map((section) => (
