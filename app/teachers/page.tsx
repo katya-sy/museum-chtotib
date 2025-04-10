@@ -3,7 +3,7 @@ import { DescBlock } from '@/components/desc-block';
 import { Card } from '@/components/card';
 
 const content = {
-  title: 'История развития',
+  title: 'Преподаватели',
   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 };
 
@@ -42,7 +42,7 @@ const sections = [
   },
 ];
 
-export default function History() {
+export default function Teachers() {
   return (
     <div>
       <Breadcrumbs />

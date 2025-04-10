@@ -26,12 +26,12 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href='/' className='nav-link'>
+              <Link href='/teachers' className='nav-link'>
                 Преподаватели
               </Link>
             </li>
             <li>
-              <Link href='/' className='nav-link'>
+              <Link href='/graduates' className='nav-link'>
                 Выпускники
               </Link>
             </li>
