@@ -8,38 +8,14 @@ const content = {
 };
 
 const sections = [
-  {
-    title: '1950-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '1960-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '1970-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '1980-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '1990-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '2000-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '2010-е годы',
-    img: '/banner.png',
-  },
-  {
-    title: '2020-е годы',
-    img: '/banner.png',
-  },
+  { id: 1, title: '1950-е годы', img: '/banner.png' },
+  { id: 2, title: '1960-е годы', img: '/banner.png' },
+  { id: 3, title: '1970-е годы', img: '/banner.png' },
+  { id: 4, title: '1980-е годы', img: '/banner.png' },
+  { id: 5, title: '1990-е годы', img: '/banner.png' },
+  { id: 6, title: '2000-е годы', img: '/banner.png' },
+  { id: 7, title: '2010-е годы', img: '/banner.png' },
+  { id: 8, title: '2020-е годы', img: '/banner.png' },
 ];
 
 export default function History() {

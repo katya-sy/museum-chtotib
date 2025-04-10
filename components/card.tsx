@@ -1,9 +1,12 @@
+'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface Props {
   item: {
+    id?: number;
     title: string;
     desc?: string;
     img: string;
@@ -13,6 +16,8 @@ interface Props {
 }
 
 export const Card = ({ item, sm, buttonText }: Props) => {
+  const pathname = usePathname();
+
   return (
     <div className='group relative md:overflow-hidden'>
       <div
@@ -44,12 +49,17 @@ export const Card = ({ item, sm, buttonText }: Props) => {
               </p>
             )}
             <Button className='max-md:hidden' asChild>
-              <Link href=''>{buttonText || 'Перейти'}</Link>
+              <Link href={`${pathname}/${item.id}`}>
+                {buttonText || 'Перейти'}
+              </Link>
             </Button>
           </div>
         </div>
       </div>
-      <Link className='absolute inset-0 md:hidden' href='' />
+      <Link
+        className='absolute inset-0 md:hidden'
+        href={`${pathname}/${item.id}`}
+      />
     </div>
   );
 };
